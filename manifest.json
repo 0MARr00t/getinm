@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "getinm",
+  "version": "1.0",
+  "description": "getinm (Get LinkedIn Jobs in Minutes), is a Browser extension that modifies LinkedIn job Search to show jobs in minutes once they advertised , making it easier for job seekers to find the latest job postings. It also provides a popup interface for users to modify the URL of LinkedIn job searches.",
+  "homepage_url": "https://github.com/0MARr00t/getinm",
+  "author": "Your Name",
+  "permissions": ["tabs", "scripting"],
+  "host_permissions": ["*://www.linkedin.com/jobs/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Get LinkedIn Jobs in Minutes"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "128": "icon.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "",
+      "strict_min_version": "109.0"
+    }
+  }
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get LinkedIn Jobs in Minutes</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 16px;
+        background: #0c002b;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: #fff;
+        width: 280px;
+      }
+
+      h3 {
+        margin-top: 0;
+        font-size: 18px;
+        color: #fff;
+      }
+      label {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 6px;
+        font-weight: bold;
+        color: #ffcc00;
+        font-size: 14px;
+      }
+      select {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 6px;
+        font-size: 14px;
+        font-weight: bold;
+        font-family: inherit;
+        margin-top: 12px;
+        background-color: #1a1a3d;
+        color: #ffffff;
+        appearance: none;
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+      }
+
+      select:focus {
+        outline: none;
+        box-shadow: 0 0 6px #ff0000;
+      }
+
+      .glow-btn {
+        position: relative;
+        display: inline-block;
+        margin-top: 20px;
+        padding: 12px 20px;
+        width: 100%;
+        text-align: center;
+        color: #ff0000;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 2px;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: inherit;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+      }
+
+      .glow-btn span {
+        position: absolute;
+        display: block;
+      }
+
+      .glow-btn span:nth-child(1) {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(to right, #0c002b, #ff0000);
+        animation: animate1 2s linear infinite;
+      }
+
+      .glow-btn span:nth-child(2) {
+        top: 0;
+        right: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(to bottom, #0c002b, #1779ff);
+        animation: animate2 2s linear infinite;
+        animation-delay: 0.5s;
+      }
+
+      .glow-btn span:nth-child(3) {
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(to left, #0c002b, #ff0000);
+        animation: animate3 2s linear infinite;
+      }
+
+      .glow-btn span:nth-child(4) {
+        top: 0;
+        left: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(to top, #0c002b, #1779ff);
+        animation: animate4 2s linear infinite;
+        animation-delay: 0.5s;
+      }
+
+      @keyframes animate1 {
+        0% {
+          transform: translateX(-100%);
+        }
+        100% {
+          transform: translateX(100%);
+        }
+      }
+
+      @keyframes animate2 {
+        0% {
+          transform: translateY(-100%);
+        }
+        100% {
+          transform: translateY(100%);
+        }
+      }
+
+      @keyframes animate3 {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+
+      @keyframes animate4 {
+        0% {
+          transform: translateY(100%);
+        }
+        100% {
+          transform: translateY(-100%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Get LinkedIn Jobs in Minutes</h3>
+
+    <label for="timeSelect">Select time interval (in minutes):</label>
+    <select id="timeSelect">
+      <option value="60">1 minute</option>
+      <option value="300">5 minutes</option>
+      <option value="600">10 minutes</option>
+      <option value="900">15 minutes</option>
+      <option value="1200">20 minutes</option>
+      <option value="1500">25 minutes</option>
+      <option value="1800">30 minutes</option>
+      <option value="2100">35 minutes</option>
+      <option value="2400">40 minutes</option>
+      <option value="2700">45 minutes</option>
+      <option value="3000">50 minutes</option>
+      <option value="3300">55 minutes</option>
+      <option value="3600">60 minutes</option>
+    </select>
+
+    <button id="applyBtn" class="glow-btn">
+      APPLY
+      <span></span><span></span><span></span><span></span>
+    </button>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

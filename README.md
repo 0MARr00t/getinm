@@ -1,7 +1,7 @@
 
 # 🔍 Get LinkedIn Jobs in Minutes
 
-A simple Chrome/Edge browser extension that lets you quickly filter LinkedIn job postings by how recently they were posted — in just **1 to 60 minutes**.
+A simple Chrome/Edge browser extension that lets you quickly filter LinkedIn job postings by how recently they were posted (in just **1 to 60 minutes**).
 
 ## 🚀 Features
 

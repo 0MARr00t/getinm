@@ -17,15 +17,17 @@ A simple Chrome/Edge browser extension that lets you quickly filter LinkedIn job
 ## 📦 Files Structure
 
 ```bash
-.
-├── manifest.json
-├── popup.html
-├── popup.js
 ├── background.js
 ├── icon.png
 ├── LICENSE
+├── manifest.json
+├── popup.html
+├── popup.js
 ├── preview.png
+├── PRIVACY.md
 └── README.md
+
+file: 9
 ```
 ## 🧩 How to Install (Developer Mode)
 
